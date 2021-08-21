@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--============================== BLUE RIMBOOK STATION ==============================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>TableBlue</defName>
+    <label>RimBook Content Station</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>Produce and post Rimbook content to get followers.</description>
+    <graphicData>
+      <texPath>TableBlue</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,1.2)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <fillPercent>0.4</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <Mass>34</Mass>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li>CraftBlue</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <compClass>CompAffectedByFacilities</compClass>
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>Content</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--============================== GREEN RIMTIFY STATION ==============================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>TableGreen</defName>
+    <label>RimTify Content Station</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>Produce and post RimTify content to get followers.</description>
+    <graphicData>
+      <texPath>TableGreen</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,1.2)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <fillPercent>0.4</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <Mass>34</Mass>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li>CraftGreen</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <compClass>CompAffectedByFacilities</compClass>
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>Content</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--============================== ORANGE RIMHUB STATION ==============================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>TableOrange</defName>
+    <label>RimHub Content Station</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>Produce and post RimHub content to get followers.</description>
+    <graphicData>
+      <texPath>TableOrange</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,1.2)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <fillPercent>0.4</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <Mass>34</Mass>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li>CraftOrange</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <compClass>CompAffectedByFacilities</compClass>
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>Content</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--============================== PURPLE RIMTWICH STATION ==============================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>TablePurple</defName>
+    <label>RimTwich Content Station</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>Produce and post RimTwich content to get followers.</description>
+    <graphicData>
+      <texPath>TablePurple</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,1.2)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <fillPercent>0.4</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <Mass>34</Mass>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li>CraftPurple</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <compClass>CompAffectedByFacilities</compClass>
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>Content</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--============================== RED RIMTUBE STATION ==============================-->
+  <ThingDef ParentName="BuildingBase">
+    <defName>TableRed</defName>
+    <label>RimTube Content Station</label>
+    <thingClass>Building_WorkTable</thingClass>
+    <description>Produce and post RimTube content to get followers.</description>
+    <graphicData>
+      <texPath>TableRed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(3,1.2)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>120</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+    </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <fillPercent>0.4</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <Mass>34</Mass>
+      <WorkToBuild>1000</WorkToBuild>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <size>(3,1)</size>
+    <designationCategory>Production</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <recipes>
+      <li>CraftRed</li>
+    </recipes>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <compClass>CompAffectedByFacilities</compClass>
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>Content</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

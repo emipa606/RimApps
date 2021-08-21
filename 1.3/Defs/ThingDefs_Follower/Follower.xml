@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- BLUE -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>FollowerBlue</defName>
+    <label>RimBook Follower</label>
+    <description>Your RimBook post was captivating.
+This follower will allow you to build a server to receive Ad Revenues.</description>
+    <graphicData>
+      <texPath>FollowerBlue</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Followers</li>
+    </thingCategories>
+    <stackLimit>100</stackLimit>
+    <tradeTags>
+      <li>Orbital_FollowersTrader</li>
+    </tradeTags>
+  </ThingDef>
+  <!-- GREEN -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>FollowerGreen</defName>
+    <label>RimTify Follower</label>
+    <description>Your song posted on RimTify was a hit.
+This follower will allow you to build a server to receive Ad Revenues.</description>
+    <graphicData>
+      <texPath>FollowerGreen</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Followers</li>
+    </thingCategories>
+    <stackLimit>100</stackLimit>
+    <tradeTags>
+      <li>Orbital_FollowersTrader</li>
+    </tradeTags>
+  </ThingDef>
+  <!-- ORANGE -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>FollowerOrange</defName>
+    <label>RimHub Follower</label>
+    <description>Your kinky video posted on RimHub was super hot.
+This follower will allow you to build a server to receive Ad Revenues.</description>
+    <graphicData>
+      <texPath>FollowerOrange</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Followers</li>
+    </thingCategories>
+    <stackLimit>100</stackLimit>
+    <tradeTags>
+      <li>Orbital_FollowersTrader</li>
+    </tradeTags>
+  </ThingDef>
+  <!-- PURPLE -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>FollowerPurple</defName>
+    <label>RimTwich Follower</label>
+    <description>Your game playthrough posted on RimTwich was great.
+This follower will allow you to build a server to receive Ad Revenues.</description>
+    <graphicData>
+      <texPath>FollowerPurple</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Followers</li>
+    </thingCategories>
+    <stackLimit>100</stackLimit>
+    <tradeTags>
+      <li>Orbital_FollowersTrader</li>
+    </tradeTags>
+  </ThingDef>
+  <!-- RED -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>FollowerRed</defName>
+    <label>RimTube Follower</label>
+    <description>Your RimTube video was an success.
+This follower will allow you to build a server to receive Ad Revenues.</description>
+    <graphicData>
+      <texPath>FollowerRed</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <useHitPoints>false</useHitPoints>
+    <statBases>
+      <MarketValue>1</MarketValue>
+      <Mass>0.01</Mass>
+    </statBases>
+    <thingCategories>
+      <li>Followers</li>
+    </thingCategories>
+    <stackLimit>100</stackLimit>
+    <tradeTags>
+      <li>Orbital_FollowersTrader</li>
+    </tradeTags>
+  </ThingDef>
+</Defs>

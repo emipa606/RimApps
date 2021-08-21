@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Categorization for Followers -->
+  <ThingCategoryDef>
+    <defName>Followers</defName>
+    <label>Followers</label>
+    <parent>Manufactured</parent>
+  </ThingCategoryDef>
+</Defs>

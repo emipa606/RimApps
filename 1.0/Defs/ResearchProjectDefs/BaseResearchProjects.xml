@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>RimApps</defName>
+    <label>RimApps</label>
+    <description>Allows you to create online content and build Ad Revenue Servers.</description>
+    <baseCost>300</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>RimApps</tab>
+    <tags>
+    </tags>
+    <prerequisites>
+    </prerequisites>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>Content</defName>
+    <label>Content Production</label>
+    <description>Allows you to create online content to get followers.</description>
+    <baseCost>500</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>RimApps</tab>
+    <tags>
+    </tags>
+    <prerequisites>
+      <li>RimApps</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>1</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>BasicAdServer</defName>
+    <label>Basic Ad Server</label>
+    <description>Allows you to build a basic Ad Revenue Server.</description>
+    <baseCost>800</baseCost>
+    <techLevel>Industrial</techLevel>
+    <tab>RimApps</tab>
+    <tags>
+    </tags>
+    <prerequisites>
+      <li>RimApps</li>
+    </prerequisites>
+    <researchViewX>3</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>IntermediateAdServer</defName>
+    <label>Intermediate Ad Server</label>
+    <description>Allows you to build an intermediate Ad Revenue Server.</description>
+    <baseCost>1600</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>RimApps</tab>
+    <tags>
+    </tags>
+    <prerequisites>
+      <li>BasicAdServer</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>4</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+  <ResearchProjectDef>
+    <defName>AdvancedAdServer</defName>
+    <label>Advanced Ad Server</label>
+    <description>Allows you to build an advanced Ad Revenue Server.</description>
+    <baseCost>3200</baseCost>
+    <techLevel>Spacer</techLevel>
+    <tab>RimApps</tab>
+    <tags>
+    </tags>
+    <prerequisites>
+      <li>IntermediateAdServer</li>
+    </prerequisites>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>5</researchViewX>
+    <researchViewY>2</researchViewY>
+  </ResearchProjectDef>
+</Defs>

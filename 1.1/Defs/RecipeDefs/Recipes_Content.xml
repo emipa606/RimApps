@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--========== BLUE RIMBOOK ============-->
+  <RecipeDef>
+    <defName>CraftBlue</defName>
+    <label>Create RimBook Content</label>
+    <description>Create RimBook content to get followers and build the Ad Revenues Server.</description>
+    <jobString>Create RimBook content</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <products>
+      <FollowerBlue>1</FollowerBlue>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  <!--========== GREEN RIMTIFY ============-->
+  <RecipeDef>
+    <defName>CraftGreen</defName>
+    <label>Create RimTify Content</label>
+    <description>Create RimTify content to get followers and build the Ad Revenues Server.</description>
+    <jobString>Create RimTify content</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <products>
+      <FollowerGreen>1</FollowerGreen>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  <!--========== ORANGE RIMHUB ============-->
+  <RecipeDef>
+    <defName>CraftOrange</defName>
+    <label>Create RimHub Content</label>
+    <description>Create RimHub content to get followers and build the Ad Revenues Server.</description>
+    <jobString>Create RimHub content</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <products>
+      <FollowerOrange>1</FollowerOrange>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  <!--========== PURPLE RIMTWICH ============-->
+  <RecipeDef>
+    <defName>CraftPurple</defName>
+    <label>Create RimTwich Content</label>
+    <description>Create RimTwich content to get followers and build the Ad Revenues Server.</description>
+    <jobString>Create RimTwich content</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <products>
+      <FollowerPurple>1</FollowerPurple>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+  <!--========== RED RIMTUBE ============-->
+  <RecipeDef>
+    <defName>CraftRed</defName>
+    <label>Create RimTube Content</label>
+    <description>Create RimTube content to get followers and build the Ad Revenues Server.</description>
+    <jobString>Create RimTube content</jobString>
+    <workAmount>2000</workAmount>
+    <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+    <products>
+      <FollowerRed>1</FollowerRed>
+    </products>
+    <workSkill>Crafting</workSkill>
+  </RecipeDef>
+</Defs>

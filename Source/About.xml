@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>RimApps</name>
+  <author>Stokovski</author>
+  <supportedVersions>
+    <li>1.0</li>
+  </supportedVersions>
+  <description>
+Earn ressources with RimApps !
+
+Make followers by creating and posting content on different platforms : RimTube, RimTwich, RimTify, RimBook and RimHub.
+Use those followers to build Ad Servers that will grand you ressources regularly.
+
+There are five different servers to build, each one giving you different ressources every 15 days.
+
+RimTube : plasteel
+RimTwich : uranium
+RimTify : steel
+RimBook : silver
+RimHub : gold
+
+Each Ad Server comes in three different versions : Basic, Intermediate, Advanced.
+Higher version means more ressources received.
+
+Followers can also be bought (like irl, yeah i know reality sucks) from the Followers Trader.
+
+Enjoy.
+Stokovski
+
+
+----------
+
+Based on SpessCarp's mod : Commercial Server.
+
+</description>
+</ModMetaData>
