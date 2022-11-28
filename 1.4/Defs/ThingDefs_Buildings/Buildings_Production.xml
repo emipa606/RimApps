@@ -29,6 +29,7 @@
       <li>BuildingsProduction</li>
     </thingCategories>
     <size>(3,1)</size>
+    <designatorDropdown>RimApps_RimBook</designatorDropdown>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
@@ -85,6 +86,7 @@
       <li>BuildingsProduction</li>
     </thingCategories>
     <size>(3,1)</size>
+    <designatorDropdown>RimApps_RimTify</designatorDropdown>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
@@ -141,6 +143,7 @@
       <li>BuildingsProduction</li>
     </thingCategories>
     <size>(3,1)</size>
+    <designatorDropdown>RimApps_RimHub</designatorDropdown>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
@@ -197,6 +200,7 @@
       <li>BuildingsProduction</li>
     </thingCategories>
     <size>(3,1)</size>
+    <designatorDropdown>RimApps_RimTwich</designatorDropdown>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
@@ -253,6 +257,7 @@
       <li>BuildingsProduction</li>
     </thingCategories>
     <size>(3,1)</size>
+    <designatorDropdown>RimApps_RimTube</designatorDropdown>
     <designationCategory>Production</designationCategory>
     <passability>PassThroughOnly</passability>
     <pathCost>70</pathCost>
