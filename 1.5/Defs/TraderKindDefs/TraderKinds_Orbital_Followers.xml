@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <TraderKindDef>
+    <defName>Orbital_FollowersTrader</defName>
+    <label>Followers Trader</label>
+    <commonality>1</commonality>
+    <orbital>true</orbital>
+    <stockGenerators>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>
+          <min>1000</min>
+          <max>3000</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FollowerRed</thingDef>
+        <countRange>
+          <min>-8</min>
+          <max>12</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FollowerBlue</thingDef>
+        <countRange>
+          <min>-8</min>
+          <max>12</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FollowerPurple</thingDef>
+        <countRange>
+          <min>-8</min>
+          <max>12</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FollowerOrange</thingDef>
+        <countRange>
+          <min>-8</min>
+          <max>12</max>
+        </countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>FollowerGreen</thingDef>
+        <countRange>
+          <min>-8</min>
+          <max>12</max>
+        </countRange>
+      </li>
+    </stockGenerators>
+  </TraderKindDef>
+</Defs>

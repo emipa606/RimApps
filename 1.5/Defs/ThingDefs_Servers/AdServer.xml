@@ -1,0 +1,721 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--==================== AD SERVER  Base ======================== -->
+  <ThingDef Name="AdServerBase" ParentName="BuildingBase" Abstract="True">
+    <graphicData>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>(2.3,2)</drawSize>
+      <shadowData>
+        <volume>(1.93,1,1.69)</volume>
+        <offset>(-0.03,0,-0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0,1,2)</rect>
+      </damageData>
+    </graphicData>
+    <statBases>
+      <Mass>34</Mass>
+      <MaxHitPoints>250</MaxHitPoints>
+      <Flammability>0.6</Flammability>
+    </statBases>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawerType>RealtimeOnly</drawerType>
+    <rotatable>false</rotatable>
+    <tickerType>Normal</tickerType>
+    <stealable>true</stealable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <size>(1,2)</size>
+    <passability>Impassable</passability>
+    <designationCategory>Production</designationCategory>
+    <building>
+      <expandHomeArea>true</expandHomeArea>
+      <ai_chillDestination>false</ai_chillDestination>
+    </building>
+    <designationHotKey>Misc6</designationHotKey>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <resourcesFractionWhenDeconstructed>1.0</resourcesFractionWhenDeconstructed>
+    <comps>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
+      <li Class="CompProperties_Explosive">
+        <explosiveRadius>8</explosiveRadius>
+        <explosiveDamageType>Flame</explosiveDamageType>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>3.5</heatPerSecond>
+        <heatPushMaxTemperature>23</heatPushMaxTemperature>
+      </li>
+    </comps>
+    <tradeability>Sellable</tradeability>
+  </ThingDef>
+  <!--==================== BLUE AD SERVER  Base ======================== -->
+  <ThingDef Name="BlueAdServerBase" ParentName="AdServerBase" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(79, 114, 195,0)</glowColor>
+      </li>
+    </comps>
+    <designatorDropdown>RimApps_RimBook</designatorDropdown>
+  </ThingDef>
+  <!--==================== BLUE AD SERVER  TIER 1 ======================== -->
+  <ThingDef ParentName="BlueAdServerBase">
+    <defName>Server_aBlue</defName>
+    <label>Basic RimBook Ad Server</label>
+    <description>The stories you posted on RimBook are followed by a small community. An ad pops up each time someone watches that video of you playing with a cute dog. Even if everybody hates ads, they can be useful. Well, for the creator at least.
+    
+The Basic RimBook Ad Server generates a small amount of silver.</description>
+    <graphicData>
+      <texPath>server_aBlue</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>1600</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <FollowerBlue>42</FollowerBlue>
+    </costList>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Silver</thingToSpawn>
+        <requiresPower>true</requiresPower>
+        <spawnCount>60</spawnCount>
+        <spawnIntervalRange>
+          <min>900000</min>
+          <max>900000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>BasicAdServer</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--==================== BLUE AD SERVER  TIER 2 ======================== -->
+  <ThingDef ParentName="BlueAdServerBase">
+    <defName>Server_bBlue</defName>
+    <label>Intermediate RimBook Ad Server</label>
+    <description>The stories you posted on RimBook are followed by a large community. An ad pops up each time someone watches that video of you playing with a cute dog. Even if everybody hates ads, they can be useful. Well, for the creator at least.
+    
+The Intermediate RimBook Ad Server generates a considerable amount of silver.</description>
+    <thingClass>Building</thingClass>
+    <graphicData>
+      <texPath>server_bBlue</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>140</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Plasteel>4</Plasteel>
+      <FollowerBlue>90</FollowerBlue>
+    </costList>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Silver</thingToSpawn>
+        <requiresPower>true</requiresPower>
+        <spawnCount>140</spawnCount>
+        <spawnIntervalRange>
+          <min>900000</min>
+          <max>900000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>IntermediateAdServer</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--==================== BLUE AD SERVER  TIER 3 ======================== -->
+  <ThingDef ParentName="BlueAdServerBase">
+    <defName>Server_cBlue</defName>
+    <label>Advanced RimBook Ad Server</label>
+    <description>The stories you posted on RimBook are followed by a huge community. An ad pops up each time someone watches that video of you playing with a cute dog. Even if everybody hates ads, they can be useful. Well, for the creator at least.
+    
+The Advanced RimBook Ad Server generates a great amount of silver.</description>
+    <graphicData>
+      <texPath>server_cBlue</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>2400</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>320</Steel>
+      <ComponentIndustrial>18</ComponentIndustrial>
+      <Plasteel>12</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <FollowerBlue>200</FollowerBlue>
+    </costList>
+    <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Silver</thingToSpawn>
+        <requiresPower>true</requiresPower>
+        <spawnCount>320</spawnCount>
+        <spawnIntervalRange>
+          <min>900000</min>
+          <max>900000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>AdvancedAdServer</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--==================== GREEN AD SERVER  Base ======================== -->
+  <ThingDef Name="GreenAdServerBase" ParentName="AdServerBase" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(73, 197, 75,0)</glowColor>
+      </li>
+    </comps>
+    <designatorDropdown>RimApps_RimTify</designatorDropdown>
+  </ThingDef>
+  <!--==================== GREEN AD SERVER  TIER 1 ======================== -->
+  <ThingDef ParentName="GreenAdServerBase">
+    <defName>Server_aGreen</defName>
+    <label>Basic RimTify Ad Server</label>
+    <description>The song you posted on RimTify is listened by a small community. An ad pops up each time someone listens to your techno remix. Even if everybody hates ads, they can be useful. Well, for the creator at least.
+    
+The Basic RimTify Ad Server generates a small amount of steel.</description>
+    <graphicData>
+      <texPath>server_aGreen</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>1600</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <FollowerGreen>42</FollowerGreen>
+    </costList>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Steel</thingToSpawn>
+        <requiresPower>true</requiresPower>
+        <spawnCount>30</spawnCount>
+        <spawnIntervalRange>
+          <min>900000</min>
+          <max>900000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>BasicAdServer</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--==================== GREEN AD SERVER  TIER 2 ======================== -->
+  <ThingDef ParentName="GreenAdServerBase">
+    <defName>Server_bGreen</defName>
+    <label>Intermediate RimTify Ad Server</label>
+    <description>The song you posted on RimTify is listened by a large community. An ad pops up each time someone listens to your techno remix. Even if everybody hates ads, they can be useful. Well, for the creator at least.
+    
+The Intermediate RimTify Ad Server generates a considerable amount of steel.</description>
+    <graphicData>
+      <texPath>server_bGreen</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>140</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Plasteel>4</Plasteel>
+      <FollowerGreen>90</FollowerGreen>
+    </costList>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Steel</thingToSpawn>
+        <requiresPower>true</requiresPower>
+        <spawnCount>80</spawnCount>
+        <spawnIntervalRange>
+          <min>900000</min>
+          <max>900000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>IntermediateAdServer</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--==================== GREEN AD SERVER  TIER 3 ======================== -->
+  <ThingDef ParentName="GreenAdServerBase">
+    <defName>Server_cGreen</defName>
+    <label>Advanced RimTify Ad Server</label>
+    <description>The song you posted on RimTify is listened by a huge community. An ad pops up each time someone listens to your techno remix. Even if everybody hates ads, they can be useful. Well, for the creator at least.
+    
+The Advanced RimTify Ad Server generates a great amount of steel.</description>
+    <graphicData>
+      <texPath>server_cGreen</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>2400</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>320</Steel>
+      <ComponentIndustrial>18</ComponentIndustrial>
+      <Plasteel>12</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <FollowerGreen>200</FollowerGreen>
+    </costList>
+    <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Steel</thingToSpawn>
+        <requiresPower>true</requiresPower>
+        <spawnCount>180</spawnCount>
+        <spawnIntervalRange>
+          <min>900000</min>
+          <max>900000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>AdvancedAdServer</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--==================== ORANGE AD SERVER  Base ======================== -->
+  <ThingDef Name="OrangeAdServerBase" ParentName="AdServerBase" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(227, 136, 0,0)</glowColor>
+      </li>
+    </comps>
+    <designatorDropdown>RimApps_RimHub</designatorDropdown>
+  </ThingDef>
+  <!--==================== ORANGE AD SERVER  TIER 1 ======================== -->
+  <ThingDef ParentName="OrangeAdServerBase">
+    <defName>Server_aOrange</defName>
+    <label>Basic RimHub Ad Server</label>
+    <description>The kinky video you posted on RimHub pleased a small community. An ad pops up each time someone watches the hot footage of yours. Even if everybody hates ads, they can be useful. Well, for the creator at least.
+    
+The Basic RimHub Ad Server generates a small amount of gold.</description>
+    <graphicData>
+      <texPath>server_aOrange</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>1600</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <FollowerOrange>42</FollowerOrange>
+    </costList>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Gold</thingToSpawn>
+        <requiresPower>true</requiresPower>
+        <spawnCount>6</spawnCount>
+        <spawnIntervalRange>
+          <min>900000</min>
+          <max>900000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>BasicAdServer</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--==================== ORANGE AD SERVER  TIER 2 ======================== -->
+  <ThingDef ParentName="OrangeAdServerBase">
+    <defName>Server_bOrange</defName>
+    <label>Intermediate RimHub Ad Server</label>
+    <description>The kinky video you posted on RimHub pleased a large community. An ad pops up each time someone watches the hot footage of yours. Even if everybody hates ads, they can be useful. Well, for the creator at least.
+    
+The Intermediate RimHub Ad Server generates a considerable amount of gold.</description>
+    <graphicData>
+      <texPath>server_bOrange</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>140</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Plasteel>4</Plasteel>
+      <FollowerOrange>90</FollowerOrange>
+    </costList>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Gold</thingToSpawn>
+        <requiresPower>true</requiresPower>
+        <spawnCount>16</spawnCount>
+        <spawnIntervalRange>
+          <min>900000</min>
+          <max>900000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>IntermediateAdServer</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--==================== ORANGE AD SERVER  TIER 3 ======================== -->
+  <ThingDef ParentName="OrangeAdServerBase">
+    <defName>Server_cOrange</defName>
+    <label>Advanced RimHub Ad Server</label>
+    <description>The kinky video you posted on RimHub pleased a huge community. An ad pops up each time someone watches the hot footage of yours. Even if everybody hates ads, they can be useful. Well, for the creator at least.
+    
+The Advanced RimHub Ad Server generates a great amount of gold.</description>
+    <graphicData>
+      <texPath>server_cOrange</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>2400</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>320</Steel>
+      <ComponentIndustrial>18</ComponentIndustrial>
+      <Plasteel>12</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <FollowerOrange>200</FollowerOrange>
+    </costList>
+    <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Gold</thingToSpawn>
+        <requiresPower>true</requiresPower>
+        <spawnCount>38</spawnCount>
+        <spawnIntervalRange>
+          <min>900000</min>
+          <max>900000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>AdvancedAdServer</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--==================== PURPLE AD SERVER  Base ======================== -->
+  <ThingDef Name="PurpleAdServerBase" ParentName="AdServerBase" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(165, 74, 169,0)</glowColor>
+      </li>
+    </comps>
+    <designatorDropdown>RimApps_RimTwich</designatorDropdown>
+  </ThingDef>
+  <!--==================== PURPLE AD SERVER  TIER 1 ======================== -->
+  <ThingDef ParentName="PurpleAdServerBase">
+    <defName>Server_aPurple</defName>
+    <label>Basic RimTwich Ad Server</label>
+    <description>The RimWorld playthrough you posted on RimTwich entertained a small community. An ad pops up each time someone watches you survive for your life. Even if everybody hates ads, they can be useful. Well, for the creator at least.
+    
+The Basic RimTwich Ad Server generates a small amount of uranium.</description>
+    <graphicData>
+      <texPath>server_aPurple</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>1600</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <FollowerPurple>42</FollowerPurple>
+    </costList>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Uranium</thingToSpawn>
+        <requiresPower>true</requiresPower>
+        <spawnCount>8</spawnCount>
+        <spawnIntervalRange>
+          <min>900000</min>
+          <max>900000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>BasicAdServer</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--==================== PURPLE AD SERVER  TIER 2 ======================== -->
+  <ThingDef ParentName="PurpleAdServerBase">
+    <defName>Server_bPurple</defName>
+    <label>Intermediate RimTwich Ad Server</label>
+    <description>The RimWorld playthrough you posted on RimTwich entertained a large community. An ad pops up each time someone watches you survive for your life. Even if everybody hates ads, they can be useful. Well, for the creator at least.
+    
+The Basic RimTwich Ad Server generates a considerable amount of uranium.</description>
+    <graphicData>
+      <texPath>server_bPurple</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>140</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Plasteel>4</Plasteel>
+      <FollowerPurple>90</FollowerPurple>
+    </costList>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Uranium</thingToSpawn>
+        <requiresPower>true</requiresPower>
+        <spawnCount>20</spawnCount>
+        <spawnIntervalRange>
+          <min>900000</min>
+          <max>900000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>IntermediateAdServer</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--==================== PURPLE AD SERVER  TIER 3 ======================== -->
+  <ThingDef ParentName="PurpleAdServerBase">
+    <defName>Server_cPurple</defName>
+    <label>Advanced RimTwich Ad Server</label>
+    <description>The RimWorld playthrough you posted on RimTwich entertained a huge community. An ad pops up each time someone watches you survive for your life. Even if everybody hates ads, they can be useful. Well, for the creator at least.
+    
+The Basic RimTwich Ad Server generates a great amount of uranium.</description>
+    <graphicData>
+      <texPath>server_cPurple</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>2400</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>320</Steel>
+      <ComponentIndustrial>18</ComponentIndustrial>
+      <Plasteel>12</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <FollowerPurple>200</FollowerPurple>
+    </costList>
+    <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Uranium</thingToSpawn>
+        <requiresPower>true</requiresPower>
+        <spawnCount>48</spawnCount>
+        <spawnIntervalRange>
+          <min>900000</min>
+          <max>900000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>AdvancedAdServer</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--==================== RED AD SERVER  Base ======================== -->
+  <ThingDef Name="RedAdServerBase" ParentName="AdServerBase" Abstract="True">
+    <comps>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(203, 49, 49,0)</glowColor>
+      </li>
+    </comps>
+    <designatorDropdown>RimApps_RimTube</designatorDropdown>
+  </ThingDef>
+  <!--==================== RED AD SERVER  TIER 1 ======================== -->
+  <ThingDef ParentName="RedAdServerBase">
+    <defName>Server_aRed</defName>
+    <label>Basic RimTube Ad Server</label>
+    <description>The footage you posted on RimTube gathered a small community. An ad pops up each time someone watches hilarious meme related montage. Even if everybody hates ads, they can be useful. Well, for the creator at least.
+    
+The Basic RimTwich Ad Server generates a small amount of plasteel.</description>
+    <graphicData>
+      <texPath>server_aRed</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>1600</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <FollowerRed>42</FollowerRed>
+    </costList>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Plasteel</thingToSpawn>
+        <requiresPower>true</requiresPower>
+        <spawnCount>5</spawnCount>
+        <spawnIntervalRange>
+          <min>900000</min>
+          <max>900000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>BasicAdServer</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--==================== RED AD SERVER  TIER 2 ======================== -->
+  <ThingDef ParentName="RedAdServerBase">
+    <defName>Server_bRed</defName>
+    <label>Intermediate RimTube Ad Server</label>
+    <description>The footage you posted on RimTube gathered a large community. An ad pops up each time someone watches hilarious meme related montage. Even if everybody hates ads, they can be useful. Well, for the creator at least.
+    
+The Basic RimTwich Ad Server generates a considerable amount of plasteel.</description>
+    <graphicData>
+      <texPath>server_bRed</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>2000</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>140</Steel>
+      <ComponentIndustrial>8</ComponentIndustrial>
+      <Plasteel>4</Plasteel>
+      <FollowerRed>90</FollowerRed>
+    </costList>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Plasteel</thingToSpawn>
+        <requiresPower>true</requiresPower>
+        <spawnCount>16</spawnCount>
+        <spawnIntervalRange>
+          <min>900000</min>
+          <max>900000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>IntermediateAdServer</li>
+    </researchPrerequisites>
+  </ThingDef>
+  <!--==================== RED AD SERVER  TIER 3 ======================== -->
+  <ThingDef ParentName="RedAdServerBase">
+    <defName>Server_cRed</defName>
+    <label>Advanced RimTube Ad Server</label>
+    <description>The footage you posted on RimTube gathered a huge community. An ad pops up each time someone watches hilarious meme related montage. Even if everybody hates ads, they can be useful. Well, for the creator at least.
+    
+The Basic RimTwich Ad Server generates a great amount of plasteel.</description>
+    <graphicData>
+      <texPath>server_cRed</texPath>
+    </graphicData>
+    <statBases>
+      <WorkToBuild>2400</WorkToBuild>
+    </statBases>
+    <costList>
+      <Steel>320</Steel>
+      <ComponentIndustrial>18</ComponentIndustrial>
+      <Plasteel>12</Plasteel>
+      <ComponentSpacer>1</ComponentSpacer>
+      <FollowerRed>200</FollowerRed>
+    </costList>
+    <constructionSkillPrerequisite>15</constructionSkillPrerequisite>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <basePowerConsumption>400</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Spawner">
+        <thingToSpawn>Plasteel</thingToSpawn>
+        <requiresPower>true</requiresPower>
+        <spawnCount>38</spawnCount>
+        <spawnIntervalRange>
+          <min>900000</min>
+          <max>900000</max>
+        </spawnIntervalRange>
+        <writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+        <showMessageIfOwned>false</showMessageIfOwned>
+      </li>
+    </comps>
+    <researchPrerequisites>
+      <li>AdvancedAdServer</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>
