@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Advanced Ad Server -->
+  <AdvancedAdServer.label>Advanced Ad Server</AdvancedAdServer.label>
+  <!-- EN: Allows you to build an advanced Ad Revenue Server. -->
+  <AdvancedAdServer.description>Allows you to build an advanced Ad Revenue Server.</AdvancedAdServer.description>
+  <!-- EN: Basic Ad Server -->
+  <BasicAdServer.label>Basic Ad Server</BasicAdServer.label>
+  <!-- EN: Allows you to build a basic Ad Revenue Server. -->
+  <BasicAdServer.description>Allows you to build a basic Ad Revenue Server.</BasicAdServer.description>
+  <!-- EN: Content Production -->
+  <Content.label>Content Production</Content.label>
+  <!-- EN: Allows you to create online content to get followers. -->
+  <Content.description>Allows you to create online content to get followers.</Content.description>
+  <!-- EN: Intermediate Ad Server -->
+  <IntermediateAdServer.label>Intermediate Ad Server</IntermediateAdServer.label>
+  <!-- EN: Allows you to build an intermediate Ad Revenue Server. -->
+  <IntermediateAdServer.description>Allows you to build an intermediate Ad Revenue Server.</IntermediateAdServer.description>
+  <!-- EN: RimApps -->
+  <RimApps.label>RimApps</RimApps.label>
+  <!-- EN: Allows you to create online content and build Ad Revenue Servers. -->
+  <RimApps.description>Allows you to create online content and build Ad Revenue Servers.</RimApps.description>
+</LanguageData>

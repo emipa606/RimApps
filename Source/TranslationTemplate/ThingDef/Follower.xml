@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: RimBook Follower -->
+  <FollowerBlue.label>RimBook Follower</FollowerBlue.label>
+  <!-- EN: Your RimBook post was captivating.\nThis follower will allow you to build a server to receive Ad Revenues. -->
+  <FollowerBlue.description>Your RimBook post was captivating.
+This follower will allow you to build a server to receive Ad Revenues.</FollowerBlue.description>
+  <!-- EN: RimTify Follower -->
+  <FollowerGreen.label>RimTify Follower</FollowerGreen.label>
+  <!-- EN: Your song posted on RimTify was a hit.\nThis follower will allow you to build a server to receive Ad Revenues. -->
+  <FollowerGreen.description>Your song posted on RimTify was a hit.
+This follower will allow you to build a server to receive Ad Revenues.</FollowerGreen.description>
+  <!-- EN: RimHub Follower -->
+  <FollowerOrange.label>RimHub Follower</FollowerOrange.label>
+  <!-- EN: Your kinky video posted on RimHub was super hot.\nThis follower will allow you to build a server to receive Ad Revenues. -->
+  <FollowerOrange.description>Your kinky video posted on RimHub was super hot.
+This follower will allow you to build a server to receive Ad Revenues.</FollowerOrange.description>
+  <!-- EN: RimTwich Follower -->
+  <FollowerPurple.label>RimTwich Follower</FollowerPurple.label>
+  <!-- EN: Your game playthrough posted on RimTwich was great.\nThis follower will allow you to build a server to receive Ad Revenues. -->
+  <FollowerPurple.description>Your game playthrough posted on RimTwich was great.
+This follower will allow you to build a server to receive Ad Revenues.</FollowerPurple.description>
+  <!-- EN: RimTube Follower -->
+  <FollowerRed.label>RimTube Follower</FollowerRed.label>
+  <!-- EN: Your RimTube video was an success.\nThis follower will allow you to build a server to receive Ad Revenues. -->
+  <FollowerRed.description>Your RimTube video was an success.
+This follower will allow you to build a server to receive Ad Revenues.</FollowerRed.description>
+</LanguageData>

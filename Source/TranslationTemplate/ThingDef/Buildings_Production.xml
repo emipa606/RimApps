@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: RimBook Content Station -->
+  <TableBlue.label>RimBook Content Station</TableBlue.label>
+  <!-- EN: Produce and post Rimbook content to get followers. -->
+  <TableBlue.description>Produce and post Rimbook content to get followers.</TableBlue.description>
+  <!-- EN: RimTify Content Station -->
+  <TableGreen.label>RimTify Content Station</TableGreen.label>
+  <!-- EN: Produce and post RimTify content to get followers. -->
+  <TableGreen.description>Produce and post RimTify content to get followers.</TableGreen.description>
+  <!-- EN: RimHub Content Station -->
+  <TableOrange.label>RimHub Content Station</TableOrange.label>
+  <!-- EN: Produce and post RimHub content to get followers. -->
+  <TableOrange.description>Produce and post RimHub content to get followers.</TableOrange.description>
+  <!-- EN: RimTwich Content Station -->
+  <TablePurple.label>RimTwich Content Station</TablePurple.label>
+  <!-- EN: Produce and post RimTwich content to get followers. -->
+  <TablePurple.description>Produce and post RimTwich content to get followers.</TablePurple.description>
+  <!-- EN: RimTube Content Station -->
+  <TableRed.label>RimTube Content Station</TableRed.label>
+  <!-- EN: Produce and post RimTube content to get followers. -->
+  <TableRed.description>Produce and post RimTube content to get followers.</TableRed.description>
+</LanguageData>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Create RimBook Content -->
+  <CraftBlue.label>Create RimBook Content</CraftBlue.label>
+  <!-- EN: Create RimBook content to get followers and build the Ad Revenues Server. -->
+  <CraftBlue.description>Create RimBook content to get followers and build the Ad Revenues Server.</CraftBlue.description>
+  <!-- EN: Create RimBook content -->
+  <CraftBlue.jobString>Create RimBook content</CraftBlue.jobString>
+  <!-- EN: Create RimTify Content -->
+  <CraftGreen.label>Create RimTify Content</CraftGreen.label>
+  <!-- EN: Create RimTify content to get followers and build the Ad Revenues Server. -->
+  <CraftGreen.description>Create RimTify content to get followers and build the Ad Revenues Server.</CraftGreen.description>
+  <!-- EN: Create RimTify content -->
+  <CraftGreen.jobString>Create RimTify content</CraftGreen.jobString>
+  <!-- EN: Create RimHub Content -->
+  <CraftOrange.label>Create RimHub Content</CraftOrange.label>
+  <!-- EN: Create RimHub content to get followers and build the Ad Revenues Server. -->
+  <CraftOrange.description>Create RimHub content to get followers and build the Ad Revenues Server.</CraftOrange.description>
+  <!-- EN: Create RimHub content -->
+  <CraftOrange.jobString>Create RimHub content</CraftOrange.jobString>
+  <!-- EN: Create RimTwich Content -->
+  <CraftPurple.label>Create RimTwich Content</CraftPurple.label>
+  <!-- EN: Create RimTwich content to get followers and build the Ad Revenues Server. -->
+  <CraftPurple.description>Create RimTwich content to get followers and build the Ad Revenues Server.</CraftPurple.description>
+  <!-- EN: Create RimTwich content -->
+  <CraftPurple.jobString>Create RimTwich content</CraftPurple.jobString>
+  <!-- EN: Create RimTube Content -->
+  <CraftRed.label>Create RimTube Content</CraftRed.label>
+  <!-- EN: Create RimTube content to get followers and build the Ad Revenues Server. -->
+  <CraftRed.description>Create RimTube content to get followers and build the Ad Revenues Server.</CraftRed.description>
+  <!-- EN: Create RimTube content -->
+  <CraftRed.jobString>Create RimTube content</CraftRed.jobString>
+</LanguageData>

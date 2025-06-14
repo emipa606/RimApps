@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: create Content -->
+  <CreateContent.label>create Content</CreateContent.label>
+  <!-- EN: Crafting -->
+  <CreateContent.gerund>Crafting</CreateContent.gerund>
+  <!-- EN: Craft -->
+  <CreateContent.verb>Craft</CreateContent.verb>
+</LanguageData>
